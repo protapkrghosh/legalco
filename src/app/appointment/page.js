@@ -23,7 +23,7 @@ const ContactForm = () => {
    const onSubmit = async (data) => {
       const appointment = {
          name: data?.name,
-         email: data?.email,
+         // email: data?.email,
          phone: data?.phoneNumber,
          servicetype: data?.serviceInterest,
          serviceInfo: data?.Message,
@@ -114,7 +114,7 @@ const ContactForm = () => {
                            )}
                  </div>
                  
-                        <div className="mb-6">
+                        {/* <div className="mb-6">
                            <label
                               htmlFor="email"
                               className="block mb-1 text-[14px] font-semibold"
@@ -143,7 +143,7 @@ const ContactForm = () => {
                                  {errors.email.message}
                               </p>
                            )}
-                        </div>
+                        </div> */}
 
                         <div className="mb-6">
                            <label
@@ -344,20 +344,24 @@ const ContactForm = () => {
                                  Admin@legalco.com
                               </span>
                            </p>
-                           <p className="text-gray-600 flex items-center">
-                              <span className="text-2xl font-extrabold">
-                                 <BsTelephone />
-                              </span>
-                              <span className="text-[15px] ">
-                              +880 9697308988
-                              </span>
-                              <span className="text-2xl font-extrabold ml-3">
-                                 <BsTelephone />
-                              </span>
-                              <span className="text-[15px] ">
-                              +8801 988 688 988
-                              </span>
-                           </p>
+                           <div className="text-gray-600 flex flex-wrap gap-2 items-center">
+                              <p className="flex gap-2">
+                                 <span className="text-2xl font-extrabold">
+                                    <BsTelephone />
+                                 </span>
+                                 <span className="text-[15px] ">
+                                 +880 9697308988
+                                 </span>
+                              </p>
+                              <p className="flex gap-2">
+                                 <span className="text-2xl font-extrabold">
+                                    <BsTelephone />
+                                 </span>
+                                 <span className="text-[15px] ">
+                                 +8801 988 688 988
+                                 </span>
+                              </p>
+                           </div>
                            <p className="text-gray-600 flex items-start">
                               <span className="text-3xl font-extrabold">
                                  <TfiLocationPin />

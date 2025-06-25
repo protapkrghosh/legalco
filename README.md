@@ -57,7 +57,7 @@ cd legalco
 
 # Step 2: Install dependencies
 npm install
-
+```
 
 ## 📦 Project Dependencies
 
